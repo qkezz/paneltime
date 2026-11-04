@@ -1,0 +1,26 @@
+{
+  "KPlugin": {
+    "Id": "local.windows11.clock",
+    "Name": "Paneltime",
+    "Description": "Compact Windows-inspired panel clock with a KDE calendar",
+    "Icon": "preferences-system-time",
+    "Category": "Date and Time",
+    "License": "GPL-2.0-or-later",
+    "Authors": [
+      {
+        "Name": "Paneltime contributors"
+      },
+      {
+        "Name": "KDE Digital Clock contributors"
+      }
+    ],
+    "Version": "1.0.0"
+  },
+  "X-KDE-ParentApp": "org.kde.plasmashell",
+  "X-Plasma-API-Minimum-Version": "6.6",
+  "X-Plasma-Provides": [
+    "org.kde.plasma.time",
+    "org.kde.plasma.date"
+  ],
+  "KPackageStructure": "Plasma/Applet"
+}
