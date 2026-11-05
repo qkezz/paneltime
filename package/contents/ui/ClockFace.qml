@@ -13,7 +13,7 @@ Item {
     property bool italic: false
     readonly property int pixelSize: preferredPixelSize
     readonly property int lineHeight: Math.ceil(pixelSize * 1.10)
-    implicitWidth: Math.ceil(Math.max(timeMetrics.advanceWidth, dateMetrics.advanceWidth)) + 20
+    implicitWidth: Math.ceil(Math.max(timeMetrics.advanceWidth, dateMetrics.advanceWidth)) + 15
     implicitHeight: dateText.length ? lineHeight * 2 : lineHeight
 
     TextMetrics { id: timeMetrics; font: timeLine.font; text: face.widthSample }
@@ -25,7 +25,7 @@ Item {
         anchors.rightMargin: 10
         anchors.verticalCenter: parent.verticalCenter
         spacing: 0
-        width: parent.width - 20
+        width: parent.width - 15
         Text {
             id: timeLine
             width: inkTimeMetrics.advanceWidth
